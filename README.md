@@ -1,5 +1,5 @@
 
-# 📦 Inventory Issue Analysis Dashboard - COLUME FEATURE ADOPTION PROJECT
+# 📦 Inventory Issue Analysis Dashboard 
 
 ---
 
