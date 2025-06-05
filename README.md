@@ -76,7 +76,7 @@
 
 ### 📋 Full Report Page
 
-👉 **[Click here to view the Inventory Report Page](./Inventory_Report_Package/Report_Page_FINAL_RaymondKadzashie.html)** 🚀
+👉 **[Click here to view the Inventory Report Page](./Report_Page_FINAL_RaymondKadzashie.html)** 🚀
 
 ---
 
@@ -94,7 +94,7 @@
 - Stockouts very low (0.1%)
 - Top Categories: Toys & Games, Office Supplies, Craft Supplies
 
-Recommendations: See **Insights & Recommendations** in [Inventory Report Page](./Inventory_Report_Package/Report_Page_FINAL_RaymondKadzashie.html) 🚀
+Recommendations: See **Insights & Recommendations** in [Inventory Report Page](./Report_Page_FINAL_RaymondKadzashie.html) 🚀
 
 ---
 
@@ -107,7 +107,7 @@ Recommendations: See **Insights & Recommendations** in [Inventory Report Page](.
 | `analysis.sql` | Final analysis query |
 | `run_project.sql` | Full pipeline |
 | `README.md` | Project documentation |
-| `/Inventory_Report_Package/Report_Page_FINAL_RaymondKadzashie.html` | Full Report Page 🚀 |
+| `/Report_Page_FINAL_RaymondKadzashie.html` | Full Report Page 🚀 |
 | `/Inventory_Report_Package/images` | All visuals used in Report Page |
 
 ---
