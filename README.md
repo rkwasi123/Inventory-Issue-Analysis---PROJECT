@@ -94,7 +94,7 @@
 - Stockouts very low (0.1%)
 - Top Categories: Toys & Games, Office Supplies, Craft Supplies
 
-Recommendations: See **Insights & Recommendations** in [Inventory Report Page](./Report_Page_FINAL_RaymondKadzashie.html) 🚀
+Recommendations: See **Insights & Recommendations** in **[Inventory Report Page](./Report_Page_FINAL_RaymondKadzashie.html)** 🚀
 
 ---
 
