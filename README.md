@@ -1,115 +1,55 @@
+# 📦 Inventory Issue Analysis — SQL & Power BI
 
-# 📦 Inventory Issue Analysis Dashboard 
-
----
-
-## 📚 Problem Statement
-
-**Stakeholder:** Inventory Manager
-
-**Goal:** Identify products with the highest number of inventory issues:
-- Manual adjustments
-- Stockouts
+**Author:** Raymond Kadzashie  
+**Repo:** [Inventory-Issue-Analysis---PROJECT](https://github.com/rkwasi123/Inventory-Issue-Analysis---PROJECT)
 
 ---
 
-## 🎯 Objectives
+## 🚀 Project Overview
 
-1️⃣ Analyze inventory logs  
-2️⃣ Spot patterns in stockouts & manual adjustments  
-3️⃣ Highlight the most affected products  
-4️⃣ Visualize trends for team insights 🚀
+Analyze and visualize inventory management issues for an e-commerce business.  
+This end-to-end project demonstrates the power of **SQL data cleaning**, **data modeling**, and **Power BI dashboarding** for real business impact.
 
 ---
 
-## 🗃️ Data Sources
+## 🧩 Key Project Steps
 
-| Table | Description |
-|-------|-------------|
-| inventory_logs | Raw inventory log (change_type, stock levels, timestamp) |
-| products | Product details |
-| suppliers | Supplier details |
-| product_reviews | Product reviews |
+- **Data Cleaning:**  
+  - Standardized inconsistent date formats  
+  - Fixed data types (Booleans, numerics)  
+  - Removed duplicates and handled missing values
 
----
+- **SQL Modeling & Analysis:**  
+  - Joined multiple sources (`products`, `inventory_logs`, `suppliers`, `reviews`)  
+  - Summarized product, category, and monthly trends  
+  - Unpivoted data for Power BI reporting
 
-## 🧹 Data Cleaning Process
-
-### Inventory Logs Cleaning:
-
-- Timestamps had inconsistent formats → standardized with STR_TO_DATE
-- Blank log_notes set to NULL
-
-### Products Cleaning:
-
-- Dates standardized (date_added, last_updated_date)
-- Blank fields (currency, is_active, is_popular_product) handled with NULLIF
-
-### Views Created:
-
-- inventory_logs_clean
-- products_clean
-- suppliers_clean
-- product_reviews_clean
-- final_inventory_analysis 🚀
+- **Power BI Visualization:**  
+  - Built a Calendar (date) table for accurate trend analysis  
+  - Created DAX measures (Manual Adjustments, Stockouts, MoM trends)  
+  - Designed a dashboard with KPIs, annotated visuals, and actionable recommendations
 
 ---
 
-## 📥 Import & Transformation in Power BI
+## 📊 **Dashboard Features**
 
-- Imported `final_inventory_analysis` view
-- Performed additional Power Query steps
-- Unpivoted manual_adjustments and stockouts for flexible charting
+- **KPI Cards:**  
+  Manual Adjustments, Stockouts, MoM Changes
 
----
+- **Top Affected Products:**  
+  Clustered bar chart shows high-maintenance SKUs
 
-## 📊 Visualizations
+- **Category Breakdown:**  
+  Which categories drive most manual work and stockouts
 
-### Main Dashboard
+- **Trend Analysis:**  
+  Monthly changes line chart (automation impact highlighted)
 
-| Visual | Description |
-|--------|-------------|
-| Top Affected Products | Clustered Bar |
-| Inventory Issues by Category | Bar Chart |
-| Trend Over Time | Line Chart (Monthly) |
-| KPI Cards | Total Inventory Changes, Manual Adjustments, Stockouts |
+- **Insights Panel:**  
+  Written executive summary and recommended actions
 
-### 📋 Full Report Page
 
-👉 **[Click here to view the Inventory Report Page](./Report_Page_FINAL_RaymondKadzashie.html)** 🚀
 
----
 
-## 🎨 Styling & Branding
 
-- Header Bar: #005B96 (Deep Blue)
-- Background: #f9f9f9
-- Titles: #333333
 
----
-
-## 🚀 Key Insights
-
-- Manual Adjustments = 5.7% of activity
-- Stockouts very low (0.1%)
-- Top Categories: Toys & Games, Office Supplies, Craft Supplies
-
-Recommendations: See **Insights & Recommendations** in **[Inventory Report Page](./Report_Page_FINAL_RaymondKadzashie.html)** 🚀
-
----
-
-## 📎 Files in this Repo
-
-| File | Description |
-|------|-------------|
-| `load_data.sql` | Loads CSVs into MySQL |
-| `cleaning.sql` | Creates clean views |
-| `analysis.sql` | Final analysis query |
-| `run_project.sql` | Full pipeline |
-| `README.md` | Project documentation |
-| `/Report_Page_FINAL_RaymondKadzashie.html` | Full Report Page 🚀 |
-| `/Inventory_Report_Package/images` | All visuals used in Report Page |
-
----
-
-Prepared by: **Raymond Kadzashie** 🚀
